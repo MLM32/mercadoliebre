@@ -14,6 +14,7 @@
       src="https://kit.fontawesome.com/d683ca57df.js"
       crossorigin="anonymous"
     ></script>
+
     <link href="/CSS/styles.css" rel="stylesheet" />
   </head>
   <body>
@@ -34,25 +35,30 @@
 
       <nav>
         <ul>
-          <li><a href="#">Ofertas</a></li>
-          <li><a href="#">Tiendas Oficiales</a></li>
-          <li><a href="#">Vender</a></li>
-          <li><a href="#">Ayuda</a></li>
-          <li>
-            <a href="/register"
-              >Creá tu cuenta <i class="fa-regular fa-id-card"></i
-            ></a>
-          </li>
-          <li>
-            <a href="/login"
-              >Ingresá <i class="fa-solid fa-right-to-bracket"></i
-            ></a>
-          </li>
-          <li>
-            <a href="#"
-              >Mis compras <i class="fa-solid fa-basket-shopping"></i
-            ></a>
-          </li>
+          <div class="sin-iconos">
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Tiendas Oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>
+          </div>
+          <div></div>
+          <div class="con-iconos">
+            <li>
+              <a href="/register"
+                >Creá tu cuenta <i class="fa-regular fa-id-card"></i
+              ></a>
+            </li>
+            <li>
+              <a href="/login"
+                >Ingresá <i class="fa-solid fa-right-to-bracket"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                >Mis compras <i class="fa-solid fa-basket-shopping"></i
+              ></a>
+            </li>
+          </div>
         </ul>
       </nav>
       <div class="burger-menu">
@@ -60,7 +66,7 @@
       </div>
     </header>
     <main>
-      <section class="register">
+      <section class="login">
         <form action="/" method="POST" enctype="multipart/form-data">
           <label for="username">Nombre de usuari@</label>
           <input type="text" id="username" name="username" required />

@@ -25,13 +25,14 @@ header {
 }
 
 header .logo img {
-  width: 100px;
+  width: 100%;
 }
 
 header .search-bar input {
   width: 80%;
   padding: 5px;
-  margin-top: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
 }
 
 .logo-search {
@@ -51,22 +52,35 @@ header .installments p {
   margin: 10px 0;
 }
 .cuotas {
-  width: 100%;
+  width: 50%;
   color: #03264c;
   font-size: 12px;
   margin-bottom: 10px;
 }
 
 nav {
-  display: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 nav ul {
   list-style-type: none;
   display: flex;
-  flex-direction: column;
-  align-items: start;
-  padding: 0;
+  padding: 5px;
+}
+
+.sin-iconos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.con-iconos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav ul li a {
@@ -241,6 +255,7 @@ footer i {
   top: -15px;
 }
 /* Estilos del Formulario de Registro */
+
 .register {
   max-width: 600px;
   margin: 0 auto;
@@ -250,6 +265,14 @@ footer i {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.login {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 .register h2 {
   text-align: center;
   margin-bottom: 20px;
@@ -260,7 +283,17 @@ footer i {
   flex-direction: column;
 }
 
+.login form {
+  display: flex;
+  flex-direction: column;
+}
+
 .register label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.login label {
   margin-bottom: 5px;
   font-weight: bold;
 }
@@ -276,12 +309,24 @@ footer i {
   border-radius: 5px;
 }
 
+.login input[type="text"],
+.login input[type="password"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
 .register input[type="radio"],
 .register input[type="checkbox"] {
   margin-right: 10px;
 }
 
 .register div {
+  margin-bottom: 10px;
+}
+
+.login div {
   margin-bottom: 10px;
 }
 
@@ -301,6 +346,10 @@ footer i {
   color: #f9f9f9;
 }
 
+.login button:hover {
+  background-color: #0022aa;
+  color: #f9f9f9;
+}
 .register button[type="reset"]:hover {
   background-color: #0022aa;
   color: #f9f9f9;
